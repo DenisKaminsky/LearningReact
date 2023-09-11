@@ -1,0 +1,18 @@
+.users {
+    margin: auto;
+    width: 90%;
+    max-width: 40rem;
+    text-align: center;
+}
+
+.users ul {
+    list-style: none;
+    padding: 1rem;
+    padding-top: 0px;
+}
+
+.users li {
+    border: 1px solid #ccc;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}

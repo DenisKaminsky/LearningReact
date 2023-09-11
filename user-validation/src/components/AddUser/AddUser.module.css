@@ -1,0 +1,42 @@
+.form-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    color: black;
+    background-color: white;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #4f005f;
+}
+
+.new-expense-actions, .add-new-expense-controls {
+    text-align: center;
+}
+
+.form-actions button {
+    width: 120px;
+    margin-right: 10px;
+}
