@@ -17,14 +17,26 @@ jobs:
         node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
+    defaults:
+      run:
+        working-directory: ./unit-tests
+
     steps:
       - uses: actions/checkout@v3
-      - run: cd unit-tests
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}        
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: npm ci
-      - run: npm run build --if-present
-      - run: npm run test
+      - name: CI
+        working-directory: ./unit-tests
+        run: npm ci
+      - name: Build
+        working-directory: ./unit-tests
+        run: npm run build --if-present
+      - name: Run Tests
+        working-directory: ./unit-tests
+        run: npm run test
+      - name: Run Linter
+        working-directory: ./unit-tests
+        run: npm run lint:validation"
