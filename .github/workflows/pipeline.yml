@@ -30,8 +30,6 @@ jobs:
           cache-dependency-path: './unit-tests/package-lock.json'
       - name: CI
         run: npm ci
-      - name: Build
-        run: npm run build --if-present
       - name: Run Tests
         run: npm run test
       - name: Run Linter
