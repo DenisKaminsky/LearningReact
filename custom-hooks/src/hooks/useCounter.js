@@ -13,5 +13,3 @@ function useCounter(initialValue, step, interval) {
 
     return counter;
 }
-
-export default useCounter;
