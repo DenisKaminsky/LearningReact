@@ -19,8 +19,7 @@
     "eject": "react-scripts eject",
     "lint:fix": "npm run lint:validation -- --fix",
     "lint:validation": "eslint . --ext .ts,.tsx,.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

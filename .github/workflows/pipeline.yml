@@ -34,3 +34,5 @@ jobs:
         run: npm run test
       - name: Run Linter
         run: npm run lint:validation
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
