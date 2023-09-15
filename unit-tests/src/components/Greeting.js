@@ -9,6 +9,7 @@ const Greeting = () => {
 
 	return <React.Fragment>
 		<h2>Hello world!</h2>
+		<h2>Hello Denis!</h2>
 		{!isClicked && <p>Not clicked</p>}
 		{isClicked && <p>Clicked</p>}
 		<button onClick={onButtonClick}>Toggle text</button>
