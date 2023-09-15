@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Greeting = () => {
-	const [isClicked, setIsClicked] = useState(false);
+ const [isClicked, setIsClicked] = useState(false);
 
 	const onButtonClick = () => {
 		setIsClicked((state) => !state);
