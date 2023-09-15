@@ -34,3 +34,5 @@ jobs:
         run: npm run test
       - name: Run Linter
         run: npm run lint:validation
+      - name: Deploy React to GitHub Pages
+        uses: bitovi/github-actions-react-to-github-pages@v1.2.1
