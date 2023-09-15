@@ -1,5 +1,6 @@
 {
   "name": "react-complete-guide",
+  "homepage": "http://deniskaminsky.github.io/LearningReact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +18,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:fix": "npm run lint:validation -- --fix",
-    "lint:validation": "eslint . --ext .ts,.tsx,.js"
+    "lint:validation": "eslint . --ext .ts,.tsx,.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +43,7 @@
   "devDependencies": {
     "eslint": "^8.49.0",
     "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.0.0"
   }
 }
