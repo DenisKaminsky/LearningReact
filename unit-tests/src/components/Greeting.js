@@ -4,12 +4,11 @@ const Greeting = () => {
 	const [isClicked, setIsClicked] = useState(false);
 
 	const onButtonClick = () => {
-		setIsClicked((state) => !state);
+  setIsClicked((state) => !state);
 	}
 
 	return <React.Fragment>
 		<h2>Hello world!</h2>
-		<h2>Hello Denis!</h2>
 		{!isClicked && <p>Not clicked</p>}
 		{isClicked && <p>Clicked</p>}
 		<button onClick={onButtonClick}>Toggle text</button>
